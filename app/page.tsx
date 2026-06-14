@@ -232,7 +232,7 @@ export default function Home() {
         className="group"
       >
         <img
-          src="/image.JPEG"
+          src="/image.jpeg"
           alt="University Management Website"
           className="rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500 cursor-pointer"
         />
