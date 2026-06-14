@@ -8,18 +8,21 @@ export default function Home() {
     <>
       <Navbar />
        <div className="flex flex-col justify-center">
-      <main className="min-h-screen bg-slate-950 text-white px-6 pt-16">
-        <motion.div
-  initial={{ opacity: 0, y: -30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
-  className="text-center mb-8"
->
-  <p className="text-purple-400 text-xl md:text-5xl font-medium tracking-wide">
-    Welcome to My Portfolio
-  </p>
-</motion.div>
-       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-6">
+     <main className="min-h-screen bg-slate-950 text-white px-6 pt-16">
+
+  {/* Welcome Section */}
+  <motion.div
+    initial={{ opacity: 0, y: -30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    className="text-center pt-8 pb-12"
+  >
+    <p className="text-purple-400 text-2xl md:text-5xl font-semibold tracking-wide">
+      Welcome to My Portfolio
+    </p>
+  </motion.div>
+
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-6">
 
   {/* LEFT SIDE */}
   <div className="flex flex-col items-center text-center">
@@ -30,39 +33,72 @@ export default function Home() {
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 1 }}
   whileHover={{ scale: 1.03 }}
-  className="text-4xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent"
+ className="text-4xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent mb-12"
 >
       Saragadam Mohana
       <br />
       Rama Renuka
     </motion.h1>
 
-    <div className="flex flex-col items-center gap-8">
+   <motion.div
+  className="flex flex-col items-center gap-8"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.8, duration: 1 }}
+>
 
-      <div className="bg-purple-600/20 border border-purple-500 px-6 py-3 rounded-full">
+     <motion.div
+       whileHover={{
+        scale: 1.05,
+        y: -5,
+     }}
+  transition={{ duration: 0.2 }}
+  className="bg-purple-600/20 border border-purple-500 px-6 py-3 rounded-full"
+>
         <p className="text-xl md:text-2xl text-purple-300 font-semibold">
           Java Full Stack Developer
         </p>
-      </div>
+      </motion.div>
 
-      <div className="bg-purple-600/20 border border-purple-500 px-6 py-3 rounded-full">
+       <motion.div
+       whileHover={{
+        scale: 1.05,
+        y: -5,
+     }}
+  transition={{ duration: 0.2 }}
+  className="bg-purple-600/20 border border-purple-500 px-6 py-3 rounded-full"
+>
         <p className="text-xl md:text-2xl text-purple-300 font-semibold">
           Problem Solver
         </p>
-      </div>
+      </motion.div>
 
-      <div className="bg-purple-600/20 border border-purple-500 px-6 py-3 rounded-full">
+     <motion.div
+       whileHover={{
+        scale: 1.05,
+        y: -5,
+     }}
+  transition={{ duration: 0.2 }}
+  className="bg-purple-600/20 border border-purple-500 px-6 py-3 rounded-full"
+>
         <p className="text-xl md:text-2xl text-purple-300 font-semibold">
           Continuous Learner
         </p>
-      </div>
+      </motion.div>
 
-    </div>
+   
 
-  </div>
+  </motion.div>
+   </div>
 
   {/* RIGHT SIDE */}
-  <div className="relative h-[600px] w-full overflow-hidden rounded-3xl shadow-2xl">
+  <motion.div
+  initial={{ opacity: 0, x: 80 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+  whileHover={{ scale: 1.01 }}
+  className="relative h-[350px] md:h-[600px] w-full overflow-hidden rounded-3xl shadow-2xl"
+>
 
     <video
       className="w-full h-full object-cover"
@@ -76,7 +112,7 @@ export default function Home() {
       Your browser does not support the video tag.
     </video>
 
-  </div>
+ </motion.div>
 
 </div>
       <section
@@ -99,11 +135,18 @@ export default function Home() {
     </p>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-    <div className="bg-slate-900 p-6 rounded-2xl">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <motion.div
+  whileHover={{
+    y: -10,
+    boxShadow: "0px 10px 30px rgba(168,85,247,0.3)",
+  }}
+  transition={{ duration: 0.3 }}
+  className="bg-slate-900 p-6 rounded-2xl"
+>
       <h3 className="text-3xl font-bold text-purple-400">3</h3>
       <p className="text-gray-300 mt-2">Internships Completed</p>
-    </div>
+    </motion.div>
 
    
 
@@ -172,8 +215,15 @@ export default function Home() {
     </div>
 
     {/* Project Card */}
-    <div className="grid lg:grid-cols-2 gap-12 items-center bg-slate-900 rounded-3xl p-8 border border-purple-500/20 hover:border-purple-500 transition duration-300">
-
+    
+<motion.div
+  whileHover={{
+    y: -8,
+    scale: 1.01,
+  }}
+  transition={{ duration: 0.3 }}
+  className="grid lg:grid-cols-2 gap-12 items-center bg-slate-900 rounded-3xl p-8 border border-purple-500/20 hover:border-purple-500"
+>
       {/* Project Image */}
       <a
         href="https://github.com/saragadammohana/University-management-website"
@@ -271,7 +321,7 @@ export default function Home() {
 
       </div>
 
-    </div>
+   </motion.div>
 
   </div>
 </motion.section>
