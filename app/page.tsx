@@ -92,28 +92,24 @@ export default function Home() {
    </div>
 
   {/* RIGHT SIDE */}
-  <motion.div
+ <motion.div
   initial={{ opacity: 0, x: 80 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 1 }}
-  whileHover={{ scale: 1.01 }}
-  className="relative h-[350px] md:h-[600px] w-full overflow-hidden rounded-3xl shadow-2xl"
+  whileHover={{
+    scale: 1.03,
+    rotate: 1,
+  }}
+ className="relative h-[300px] md:h-[450px] w-[280px] md:w-[380px] mx-auto overflow-hidden rounded-3xl shadow-2xl border border-cyan-400/20"
 >
+  <img
+    src="mohana.jpeg"
+   
+    className="w-full h-full object-cover transition duration-500 hover:scale-105"
+  />
 
-    <video
-      className="w-full h-full object-cover"
-      autoPlay
-      muted
-      loop
-      playsInline
-      controls
-    >
-      <source src="/intro.mp4.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
- </motion.div>
-
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+</motion.div>
 </div>
       <section
  id="about"
@@ -567,7 +563,7 @@ cursor-pointer
           </p>
 
           <p className="text-gray-400 mt-2">
-            2022 – 2023
+            2021 – 2023
           </p>
 
           <p className="text-green-400 font-semibold mt-3">
