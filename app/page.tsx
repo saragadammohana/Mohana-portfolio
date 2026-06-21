@@ -598,7 +598,7 @@ cursor-pointer
     </div>
 
   </div>
-</section>
+  </section>
 <section id="certifications" className="py-20 px-6">
   <div className="max-w-7xl mx-auto">
 
@@ -617,8 +617,12 @@ cursor-pointer
     <div className="grid md:grid-cols-3 gap-8">
 
       {/* IBM Python */}
-      <div className="bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
-
+      <a
+        href="ibmai.jpeg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300"
+      >
         <div className="text-5xl mb-6">🐍</div>
 
         <h3 className="text-2xl font-bold text-white mb-3">
@@ -632,12 +636,15 @@ cursor-pointer
         <p className="text-gray-300">
           Gained practical knowledge of Python programming concepts and problem-solving techniques.
         </p>
-
-      </div>
+      </a>
 
       {/* IBM JavaScript */}
-      <div className="bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
-
+      <a
+        href="/ibmjs.jpeg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300"
+      >
         <div className="text-5xl mb-6">💻</div>
 
         <h3 className="text-2xl font-bold text-white mb-3">
@@ -651,12 +658,15 @@ cursor-pointer
         <p className="text-gray-300">
           Strengthened frontend development skills by learning JavaScript fundamentals and interactive programming.
         </p>
-
-      </div>
+      </a>
 
       {/* Accenture AI */}
-      <div className="bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300">
-
+      <a
+        href="accenturecert.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300"
+      >
         <div className="text-5xl mb-6">🤖</div>
 
         <h3 className="text-2xl font-bold text-white mb-3">
@@ -670,12 +680,34 @@ cursor-pointer
         <p className="text-gray-300">
           Developed an understanding of artificial intelligence concepts, applications, and emerging technologies.
         </p>
+      </a>
+      {/* HP AI Course */}
+<a
+  href="hpcert.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block bg-slate-900 p-8 rounded-3xl border border-purple-500/20 hover:border-purple-500 hover:-translate-y-2 transition duration-300"
+>
+  <div className="text-5xl mb-6">🧠</div>
 
-      </div>
+  <h3 className="text-2xl font-bold text-white mb-3">
+    AI for Beginners
+  </h3>
+
+  <p className="text-purple-300 mb-4">
+    HP LIFE
+  </p>
+
+  <p className="text-gray-300">
+    Learned the fundamentals of Artificial Intelligence, its applications, and real-world use cases through the HP LIFE certification program.
+  </p>
+</a>
 
     </div>
 
   </div>
+
+  
 </section>
 <section id="contact" className="py-20 px-6">
   <div className="max-w-5xl mx-auto">
