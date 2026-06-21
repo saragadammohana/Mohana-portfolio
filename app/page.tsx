@@ -161,36 +161,140 @@ export default function Home() {
     </div>
   </div>
 </section>
-    <section id="skills" className="w-full max-w-6xl py-20 px-6">
-  <div className="text-center mb-12">
-    <h2 className="text-4xl font-bold text-purple-400 mb-4">
+   <section
+  id="skills"
+  className="w-full max-w-7xl py-24 px-6 mx-auto"
+>
+  <div className="mb-16">
+    <p className="text-cyan-400 tracking-[4px] uppercase text-sm mb-4">
+      // Technical Stack
+    </p>
+
+     <h2 className="
+text-5xl
+font-bold
+text-white
+mb-4
+transition-all duration-500
+hover:text-cyan-400
+cursor-default
+">
       Skills
     </h2>
 
-    <p className="text-gray-300">
-      Technologies and tools I use to build efficient applications.
-    </p>
+    <div className="
+w-20
+h-1
+bg-cyan-400
+rounded-full
+transition-all duration-500
+hover:w-40
+"></div>
   </div>
 
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-    {[
-      "Java",
-      "Python",
-      "SQL",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      
-    ].map((skill) => (
-      <div
-        key={skill}
-        className="bg-slate-900 p-6 rounded-2xl text-center border border-purple-500/20 hover:border-purple-500 hover:scale-105 transition duration-300"
-      >
-        <p className="text-xl font-semibold text-white">
-          {skill}
-        </p>
+  <div className="grid md:grid-cols-3 gap-8">
+
+    {/* Languages */}
+    <div className="
+bg-[#0b1835]
+rounded-3xl
+p-8
+border border-cyan-500/20
+shadow-lg
+transition-all duration-500
+hover:-translate-y-3
+hover:border-cyan-400
+hover:bg-[#102347]
+hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]
+cursor-pointer
+">
+      <h3 className="text-cyan-400 tracking-[3px] uppercase text-sm mb-8">
+        Languages
+      </h3>
+
+      <div className="flex flex-wrap gap-4">
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          Java
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          Python
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          SQL
+        </span>
       </div>
-    ))}
+    </div>
+
+    {/* Web Development */}
+    <div className="
+bg-[#0b1835]
+rounded-3xl
+p-8
+border border-cyan-500/20
+shadow-lg
+transition-all duration-500
+hover:-translate-y-3
+hover:border-cyan-400
+hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]
+cursor-pointer
+">
+      <h3 className="text-cyan-400 tracking-[3px] uppercase text-sm mb-8">
+        Web Development
+      </h3>
+
+      <div className="flex flex-wrap gap-4">
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          HTML5
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          CSS3
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          JavaScript
+        </span>
+      </div>
+    </div>
+
+    {/* Soft Skills */}
+    <div className="
+bg-[#0b1835]
+rounded-3xl
+p-8
+border border-cyan-500/20
+shadow-lg
+transition-all duration-500
+hover:-translate-y-3
+hover:border-cyan-400
+hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]
+cursor-pointer
+">
+      <h3 className="text-cyan-400 tracking-[3px] uppercase text-sm mb-8">
+        Soft Skills
+      </h3>
+
+      <div className="flex flex-wrap gap-4">
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          Leadership
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          Teamwork
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          Communication
+        </span>
+
+        <span className="px-5 py-2 rounded-full bg-[#11264e] border border-cyan-500/20">
+          Fast Learner
+        </span>
+      </div>
+    </div>
+
   </div>
 </section>
 <motion.section
